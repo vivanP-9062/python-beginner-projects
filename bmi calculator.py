@@ -4,11 +4,11 @@ height= float(input("what is your height in meters\n"))
 bmi = weight/ height **2
 
 print("your bmi is: " + str((round(bmi, 2))) + "\n")
-
-print ("""if your bmi is Below 18.5 = Underweight
-
-18.5 - 24.9 = Normal weight
-
-25 - 29.9 = Overweight
-
-30 and above = Obese""")
+if bmi < 18.5:
+    print("you are underweight")
+elif bmi <= 24.9:
+    print("you are normal weight")
+elif bmi <= 29.9:
+    print("you are overweight")
+else:
+    print("you are obese")
